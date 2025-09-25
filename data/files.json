@@ -1,5 +1,7 @@
 [
-  { "name": "S1.java", "url": "programs/S1.java" },
-  { "name": "S2.java", "url": "programs/S2.java" },
-  { "name": "ArrayPrograms.java", "url": "programs/ArrayPrograms.java" }
+  { "name": "HelloWorld.java", "url": "programs/HelloWorld.java" },
+  { "name": "GreatestNumber.java", "url": "programs/GreatestNumber.java" },
+  { "name": "ArrayOperations.java", "url": "programs/ArrayOperations.java" },
+  { "name": "LoopExamples.java", "url": "programs/LoopExamples.java" },
+  { "name": "CarDemo.java", "url": "programs/CarDemo.java" }
 ]
