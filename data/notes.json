@@ -1,18 +1,34 @@
-[
+[[
   {
     "title": "Java Basics",
-    "content": "Variables, Data Types, Operators, If-Else, Loops, Arrays."
+    "content": "Java is an object-oriented programming language. Key concepts: Variables, Data Types, Operators, If-Else statements, Loops, Arrays."
   },
   {
-    "title": "OOP Concepts",
-    "content": "Class, Object, Constructor, Inheritance, Polymorphism, Encapsulation."
+    "title": "Object-Oriented Programming",
+    "content": "OOP Concepts: Class, Object, Constructor, Inheritance, Polymorphism, Encapsulation, Abstraction. Helps in modular and reusable code."
   },
   {
-    "title": "Advanced Topics",
-    "content": "Multithreading, File Handling, Exception Handling, Collections Framework."
+    "title": "Strings in Java",
+    "content": "String operations: length(), charAt(), substring(), equals(), equalsIgnoreCase(), concat(), toUpperCase(), toLowerCase(), trim(), split()."
   },
   {
-    "title": "Tips & Tricks",
-    "content": "Use meaningful variable names, keep code modular, comment your code."
+    "title": "Collections Framework",
+    "content": "Common interfaces: List, Set, Map. Common classes: ArrayList, LinkedList, HashSet, HashMap. Useful methods: add(), remove(), get(), size(), contains()."
+  },
+  {
+    "title": "Exception Handling",
+    "content": "Try-Catch blocks, finally, throw, throws, custom exceptions. Ensures program does not crash on runtime errors."
+  },
+  {
+    "title": "File Handling",
+    "content": "Reading/Writing files using FileReader, FileWriter, BufferedReader, BufferedWriter. Always close streams after use."
+  },
+  {
+    "title": "Multithreading",
+    "content": "Threads allow concurrent execution. Key methods: start(), run(), sleep(), join(). Use synchronized blocks to avoid race conditions."
+  },
+  {
+    "title": "Java Tips & Best Practices",
+    "content": "Use meaningful variable names, keep code modular, comment your code, follow naming conventions, handle exceptions properly."
   }
 ]
