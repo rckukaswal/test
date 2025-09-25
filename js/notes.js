@@ -1,7 +1,10 @@
 const notesContainer = document.getElementById("notes-container");
 
-fetch("./data/notes.json")  // correct path
-  .then(res => res.json())
+fetch("./data/notes.json")
+  .then(res => {
+    if(!res.ok) throw new Error("Network response was not ok");
+    return res.json();
+  })
   .then(notes => {
     notes.forEach(note => {
       const card = document.createElement("div");
@@ -16,5 +19,5 @@ fetch("./data/notes.json")  // correct path
   })
   .catch(err => {
     notesContainer.innerHTML = "<p>⚠️ Could not load notes.</p>";
-    console.error(err);
+    console.error("Error loading notes:", err);
   });
