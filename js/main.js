@@ -1,16 +1,31 @@
 const fileList = document.getElementById("file-list");
+const fileContent = document.getElementById("file-content");
+const codeBlock = document.getElementById("code-block");
 
-// files.json से Java files load करना
+// Load files from files.json
 fetch("data/files.json")
   .then(res => res.json())
   .then(files => {
     files.forEach(f => {
       const card = document.createElement("div");
       card.classList.add("card");
-      card.innerHTML = `
-        <h3>${f.name}</h3>
-        <a href="${f.url}" target="_blank">View File</a>
-      `;
+      card.innerHTML = `<h3>${f.name}</h3>`;
+      
+      // Click to load code in same page
+      card.addEventListener("click", () => {
+        fetch(f.url)
+          .then(res => res.text())
+          .then(code => {
+            codeBlock.textContent = code;
+            fileContent.style.display = "block";
+            fileContent.scrollIntoView({ behavior: "smooth" });
+          })
+          .catch(err => {
+            codeBlock.textContent = "⚠️ Could not load file content.";
+            fileContent.style.display = "block";
+          });
+      });
+
       fileList.appendChild(card);
     });
   })
