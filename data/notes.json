@@ -1,12 +1,97 @@
 [
   {
-    "title": "Java Basics",
-    "content": "Java is a high-level, object-oriented programming language. Key concepts: Variables, Data Types, Operators, If-Else, Loops, Arrays.",
-    "example": "int a = 10;\nint b = 20;\nif(a < b){\n  System.out.println(\"a is smaller\");\n}"
+    "title": "If Statement",
+    "content": "If statement allows conditional execution. Syntax: if(condition){ // code }",
+    "example": "int a = 10;\nif(a > 5){\n  System.out.println(\"a is greater than 5\");\n}"
   },
   {
-    "title": "OOP Concepts",
-    "content": "OOP Concepts: Class, Object, Constructor, Inheritance, Polymorphism, Encapsulation, Abstraction.",
-    "example": "class Car {\n  String brand;\n  Car(String b){ brand=b; }\n}"
+    "title": "If-Else Statement",
+    "content": "Executes one block if condition is true, another if false.",
+    "example": "int a = 10;\nif(a > 20){\n  System.out.println(\"a > 20\");\n}else{\n  System.out.println(\"a <= 20\");\n}"
+  },
+  {
+    "title": "If-Else-If Ladder",
+    "content": "Allows checking multiple conditions sequentially.",
+    "example": "int marks = 85;\nif(marks >= 90){\n  System.out.println(\"A grade\");\n}else if(marks >= 75){\n  System.out.println(\"B grade\");\n}else{\n  System.out.println(\"C grade\");\n}"
+  },
+  {
+    "title": "Switch Statement",
+    "content": "Switch is used to select one of many code blocks.",
+    "example": "int day = 3;\nswitch(day){\n  case 1: System.out.println(\"Monday\"); break;\n  case 2: System.out.println(\"Tuesday\"); break;\n  case 3: System.out.println(\"Wednesday\"); break;\n  default: System.out.println(\"Other day\");\n}"
+  },
+  {
+    "title": "For Loop",
+    "content": "For loop is used to execute a block of code multiple times.",
+    "example": "for(int i=1;i<=5;i++){\n  System.out.println(i);\n}"
+  },
+  {
+    "title": "While Loop",
+    "content": "Executes code as long as condition is true.",
+    "example": "int i=1;\nwhile(i<=5){\n  System.out.println(i);\n  i++;\n}"
+  },
+  {
+    "title": "Do-While Loop",
+    "content": "Executes code at least once, then checks condition.",
+    "example": "int i=1;\ndo{\n  System.out.println(i);\n  i++;\n}while(i<=5);"
+  },
+  {
+    "title": "Arrays",
+    "content": "Arrays store multiple values of same type. Index starts at 0.",
+    "example": "int[] arr = {10,20,30};\nSystem.out.println(arr[1]); // 20"
+  },
+  {
+    "title": "Strings",
+    "content": "Strings store text. They are immutable.",
+    "example": "String s = \"Hello\";\nSystem.out.println(s.toUpperCase());"
+  },
+  {
+    "title": "Class & Object",
+    "content": "Class is a blueprint, Object is instance of class.",
+    "example": "class Car{\n  String brand;\n}\nCar c = new Car();\nc.brand = \"BMW\";"
+  },
+  {
+    "title": "Constructor",
+    "content": "Special method to initialize objects.",
+    "example": "class Car{\n  String brand;\n  Car(String b){ brand=b; }\n}\nCar c = new Car(\"BMW\");"
+  },
+  {
+    "title": "Inheritance",
+    "content": "A class can inherit properties of another class using extends.",
+    "example": "class Vehicle{}\nclass Car extends Vehicle{}"
+  },
+  {
+    "title": "Polymorphism",
+    "content": "Same method name behaves differently. Compile-time (overloading) and Runtime (overriding).",
+    "example": "class A{ void show(){} }\nclass B extends A{ void show(){} }"
+  },
+  {
+    "title": "Encapsulation",
+    "content": "Keeping variables private and providing public getters/setters.",
+    "example": "class Student{\n  private int age;\n  public void setAge(int a){ age=a; }\n  public int getAge(){ return age; }\n}"
+  },
+  {
+    "title": "Abstraction",
+    "content": "Hiding implementation using abstract class or interface.",
+    "example": "abstract class Shape{\n  abstract void draw();\n}"
+  },
+  {
+    "title": "Exception Handling",
+    "content": "Use try-catch to handle errors and prevent crashes.",
+    "example": "try{\n  int a=10/0;\n}catch(Exception e){\n  System.out.println(\"Error\");\n}"
+  },
+  {
+    "title": "File Handling",
+    "content": "Read/Write files using FileReader/FileWriter.",
+    "example": "FileWriter fw = new FileWriter(\"file.txt\");\nfw.write(\"Hello\");\nfw.close();"
+  },
+  {
+    "title": "Multithreading",
+    "content": "Multiple threads run concurrently.",
+    "example": "class MyThread extends Thread{\n  public void run(){ System.out.println(\"Thread running\"); }\n}\nnew MyThread().start();"
+  },
+  {
+    "title": "Collections Framework",
+    "content": "List, Set, Map are commonly used collections.",
+    "example": "ArrayList<String> list = new ArrayList<>();\nlist.add(\"Java\");"
   }
 ]
