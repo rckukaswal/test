@@ -1,11 +1,12 @@
 const notesContainer = document.getElementById("notes-container");
 
-fetch("./data/notes.json")
+fetch("./data/notes.json?t=" + new Date().getTime())
   .then(res => {
     if(!res.ok) throw new Error("Network response was not ok");
     return res.json();
   })
   .then(notes => {
+    notesContainer.innerHTML = ""; // Clear old notes
     notes.forEach(note => {
       const card = document.createElement("div");
       card.classList.add("card");
