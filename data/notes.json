@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Java Basics",
+    "content": "Variables, Data Types, Operators, If-Else, Loops, Arrays."
+  },
+  {
+    "title": "OOP Concepts",
+    "content": "Class, Object, Constructor, Inheritance, Polymorphism, Encapsulation."
+  },
+  {
+    "title": "Advanced Topics",
+    "content": "Multithreading, File Handling, Exception Handling, Collections Framework."
+  },
+  {
+    "title": "Tips & Tricks",
+    "content": "Use meaningful variable names, keep code modular, comment your code."
+  }
+]
